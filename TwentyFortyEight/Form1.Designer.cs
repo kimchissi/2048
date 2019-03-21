@@ -75,6 +75,7 @@
             // 
             // btnRules
             // 
+            this.btnRules.Enabled = false;
             this.btnRules.Location = new System.Drawing.Point(234, 75);
             this.btnRules.Margin = new System.Windows.Forms.Padding(2);
             this.btnRules.Name = "btnRules";
@@ -87,7 +88,7 @@
             // txtScore
             // 
             this.txtScore.Enabled = false;
-            this.txtScore.Location = new System.Drawing.Point(136, 78);
+            this.txtScore.Location = new System.Drawing.Point(150, 76);
             this.txtScore.Margin = new System.Windows.Forms.Padding(2);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(71, 20);
@@ -97,6 +98,7 @@
             // 
             // btnNew
             // 
+            this.btnNew.Enabled = false;
             this.btnNew.Location = new System.Drawing.Point(304, 75);
             this.btnNew.Margin = new System.Windows.Forms.Padding(2);
             this.btnNew.Name = "btnNew";
@@ -108,6 +110,7 @@
             // 
             // btnLeft
             // 
+            this.btnLeft.Enabled = false;
             this.btnLeft.Location = new System.Drawing.Point(37, 477);
             this.btnLeft.Margin = new System.Windows.Forms.Padding(2);
             this.btnLeft.Name = "btnLeft";
@@ -120,6 +123,7 @@
             // 
             // btnUp
             // 
+            this.btnUp.Enabled = false;
             this.btnUp.Location = new System.Drawing.Point(136, 477);
             this.btnUp.Margin = new System.Windows.Forms.Padding(2);
             this.btnUp.Name = "btnUp";
@@ -132,6 +136,7 @@
             // 
             // btnDown
             // 
+            this.btnDown.Enabled = false;
             this.btnDown.Location = new System.Drawing.Point(234, 477);
             this.btnDown.Margin = new System.Windows.Forms.Padding(2);
             this.btnDown.Name = "btnDown";
@@ -144,6 +149,7 @@
             // 
             // btnRight
             // 
+            this.btnRight.Enabled = false;
             this.btnRight.Location = new System.Drawing.Point(328, 477);
             this.btnRight.Margin = new System.Windows.Forms.Padding(2);
             this.btnRight.Name = "btnRight";
@@ -159,7 +165,7 @@
             this.btnOk.Location = new System.Drawing.Point(82, 78);
             this.btnOk.Margin = new System.Windows.Forms.Padding(2);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(40, 20);
+            this.btnOk.Size = new System.Drawing.Size(45, 20);
             this.btnOk.TabIndex = 0;
             this.btnOk.TabStop = false;
             this.btnOk.Text = "ok";
