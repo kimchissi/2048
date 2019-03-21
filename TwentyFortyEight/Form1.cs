@@ -18,51 +18,59 @@ namespace TwentyFortyEight
         }
         //test2
 
-        private void btnLeft_Click(object sender, EventArgs e)
+        private void frmTwentyFortyEight_KeyDown(object sender, KeyEventArgs e)
         {
-            MessageBox.Show("Hi!");
-        }
-        private void btnUp_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("you're the best!");
-        }
-        private void btnDown_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hollard!!");
-        }
-        private void btnRight_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("scooby dooooo!");
+            
+            if (e.KeyCode.ToString() == "A")
+            {
+                btnLeft.PerformClick();
+            }
+            if (e.KeyCode.ToString() == "W")
+            {
+                btnUp.PerformClick();
+            }
+            if (e.KeyCode.ToString() == "D")
+            {
+                btnRight.PerformClick();
+            }
+            if (e.KeyCode.ToString() == "S")
+            {
+                btnDown.PerformClick();
+            }
+            
         }
 
         private void frmTwentyFortyEight_Load(object sender, EventArgs e)
         {
             this.KeyPreview = true;
+
+            if (txtName.Text != "Name")
+            {
+
+            }
+            txtScore.Enabled = true;
+
+
         }
 
-        private void frmTwentyFortyEight_KeyDown(object sender, KeyEventArgs e)
+        private void btnLeft_Click(object sender, EventArgs e)
         {
-            
-            if (e.Control == true && e.KeyCode == Keys.Left)
-            {
-                btnLeft.PerformClick();
-            }
-            if (e.Control == true && e.KeyCode == Keys.Up)
-            {
-                btnUp.PerformClick();
-            }
-            if (e.Control == true && e.KeyCode == Keys.Down)
-            {
-                btnDown.PerformClick();
-            }
-            if (e.Control == true && e.KeyCode == Keys.Right)
-            {
-                btnRight.PerformClick();
-            }
-
+            MessageBox.Show("LEFT WORKED");
+        }
+        private void btnUp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("UP WORKED");
+        }
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("RIGHT WORKED");
+        }
+        private void btnDown_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("DOWN WORKED");
         }
 
-        private void btnName_Click(object sender, EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)
         {
             MessageBox.Show("really quick!");
             txtName.Enabled = false;
@@ -71,6 +79,14 @@ namespace TwentyFortyEight
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtName_Click(object sender, EventArgs e)
+        {
+            if (txtName.Text == "Name")
+            {
+                txtName.Text = "";
+            }
         }
     }
 }
