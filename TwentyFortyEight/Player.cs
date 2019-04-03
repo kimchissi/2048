@@ -25,6 +25,4 @@ namespace TwentyFortyEight
             return this.playerName;
         }
     }
-
-
 }
